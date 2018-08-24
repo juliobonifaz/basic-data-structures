@@ -1,17 +1,20 @@
 //
-//  main.cpp
+//  linkedList.hpp
 //  Linked List
 //
-//  Created by Bryan Gonzales Vega on 8/22/18.
+//  Created by Bryan Gonzales Vega on 8/23/18.
 //  Copyright © 2018 UTEC. All rights reserved.
 //
 
+#ifndef linkedList_h
+#define linkedList_h
+
 #include <iostream>
-#include "list.h"
+#include "../List/list.h"
 
 namespace cs2100 {
     template <class AnyObject>
-    class UnorderedList final : List<AnyObject> {
+    class LinkedList final : List<AnyObject> {
     private:
         struct Node {
             AnyObject value;
@@ -19,10 +22,14 @@ namespace cs2100 {
         };
         
         Node * head = nullptr;
+        Node * tail = nullptr;
         
     public:
-        UnorderedList() = default;
-        ~UnorderedList() = default;
+        LinkedList() = default;
+        ~LinkedList() = default;
+        
+        Node * getHead () { return head; }
+        Node * getTail () { return tail; }
         
         void push_front (AnyObject value) {
             /* Complete this function */
@@ -39,7 +46,7 @@ namespace cs2100 {
         void pop_back() {
             /* Complete this function */
         }
-
+        
         inline void describe () {
             std::cout << "List:" << ((!head) ? " (empty)": " ");
             for ( Node * current = head ; current != nullptr ; current = current->pointer ) {
@@ -51,21 +58,6 @@ namespace cs2100 {
 }
 
 template <class AnyObject>
-using UnorderedList = cs2100::UnorderedList<AnyObject>;
+using LinkedList = cs2100::LinkedList<AnyObject>;
 
-int main(int argc, const char * argv[]) {
-    
-    UnorderedList<std::string> list;
-    
-    list.push_front("c");
-    list.push_front("b");
-    list.push_front("a");
-    list.describe();
-    
-    list.push_back("x");
-    list.push_back("y");
-    list.push_back("z");
-    list.describe();
-    
-    return 0;
-}
+#endif /* linkedList_h */
