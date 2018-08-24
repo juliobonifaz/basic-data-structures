@@ -35,16 +35,11 @@ namespace cs2100 {
         bool isEmpty () { return !root; }
         
         void push(AnyObject value) {
-            Node * newNode = new Node{value, root};
-            root = newNode;
+            /* Complete this function */
         }
         
         void pop() {
-            if ( !isEmpty() ) {
-                Node * rootBackup = root;
-                root = rootBackup->pointer;
-                delete rootBackup;
-            }
+            /* Complete this function */
         }
         
         inline void describe () {
