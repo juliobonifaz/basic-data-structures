@@ -39,7 +39,7 @@ namespace cs2100 {
         
         void push_back (AnyObject value) {
             /* se crea un nuevo nodo temporal
-            este nodo apunta la cola
+            este nodo apunta la cola la cual se llega recoriendo todo el areglo 
             el vector que apuntaba a la cola ahora apunta al nuevo nodo
             */
         }
@@ -54,7 +54,7 @@ namespace cs2100 {
         
         void pop_back() {
             /* cout a la cola
-            se crea un puntero temporal que apunta a la cola
+            se crea un puntero temporal que apunta a la cola recoriendo toda la lista 
             el puntero que apuntaba a la cabeza apunta a la cabeza -1 esto se consuige recoriendo toda la lista hasta que se llega a este punto
             se elimna la cola previa
             */
