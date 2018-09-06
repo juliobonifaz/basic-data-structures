@@ -56,7 +56,7 @@ namespace cs2100 {
         void pop_back() {
             /* cout a la cola
             se crea un puntero temporal que apunta a la cola
-            el puntero que apuntaba a la cabeza apunta a la cabeza -1
+            el puntero que apuntaba a la cabeza apunta a la cabeza -1 esto se consuige recoriendo toda la lista hasta que se llega a este punto
             se elimna la cola previa
             */
         }
