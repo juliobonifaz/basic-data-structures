@@ -30,20 +30,34 @@ namespace cs2100 {
         
         Node * getHead () { return head; }
         
-        void push_front (AnyObject value) {
-            /* Complete this function */
+       void push_front (AnyObject value) {
+             /* se crea un nuevo nodo temporal
+            este nodo apunta la cabeza
+            el vector que apuntaba a la cabeca ahora apunta al nuevo nodo
+            */
         }
         
         void push_back (AnyObject value) {
-            /* Complete this function */
+            /* se crea un nuevo nodo temporal
+            este nodo apunta la cola
+            el vector que apuntaba a la cola ahora apunta al nuevo nodo
+            */
         }
         
         void pop_front() {
-            /* Complete this function */
+            /* cout a la cabeza
+            se crea un puntero temporal que apunta a la cabeza 
+            el puntero que apuntaba a la cabeza apunta a la cabeza +1
+            se elimna la cabeza previa
+            */
         }
         
         void pop_back() {
-            /* Complete this function */
+            /* cout a la cola
+            se crea un puntero temporal que apunta a la cola
+            el puntero que apuntaba a la cabeza apunta a la cabeza -1 esto se consuige recoriendo toda la lista hasta que se llega a este punto
+            se elimna la cola previa
+            */
         }
         
         inline void describe () {
