@@ -35,11 +35,18 @@ namespace cs2100 {
         bool isEmpty () { return !root; }
         
         void push(AnyObject value) {
-            /* Complete this function */
+            /* se crea un nuevo nodo temporal
+            este nodo apunta la cabeza
+            el vector que apuntaba a la cabeca ahora apunta al nuevo nodo
+            */
         }
         
         void pop() {
-            /* Complete this function */
+            /* cout a la cabeza
+            se crea un puntero temporal que apunta a la cabeza 
+            el puntero que apuntaba a la cabeza apunta a la cabeza +1
+            se elimna la cabeza previa
+            */
         }
         
         inline void describe () {
